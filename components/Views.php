@@ -1,13 +1,13 @@
 <?php namespace Vdomah\BlogViews\Components;
 
 use Cms\Classes\ComponentBase;
-use Rainlab\Blog\Models\Post as BlogPost;
+use Winter\Blog\Models\Post as BlogPost;
 use Db;
 
 class Views extends ComponentBase
 {
     /**
-     * @var Rainlab\Blog\Models\Post The post model used for display.
+     * @var Winter\Blog\Models\Post The post model used for display.
      */
     public $post;
 
@@ -23,8 +23,8 @@ class Views extends ComponentBase
     {
         return [
             'slug' => [
-                'title'       => 'rainlab.blog::lang.properties.post_slug',
-                'description' => 'rainlab.blog::lang.properties.post_slug_description',
+                'title'       => 'winter.blog::lang.properties.post_slug',
+                'description' => 'winter.blog::lang.properties.post_slug_description',
                 'default'     => '{{ :slug }}',
                 'type'        => 'string'
             ]
